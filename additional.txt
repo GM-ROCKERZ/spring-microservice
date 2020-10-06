@@ -1,0 +1,14 @@
+#Restfull web Service
+
+Social media application:
+user ->Posts
+
+-Retrieve all user  - GET/users 
+-create a user      - POST/users
+-Retrieve one User  - GET/users/{id}-->/users/1
+-Delete a User	    - DELETE/user/{id}-->/users/1
+
+
+Retrieve all posts for a user - GET/user/{id}/posts
+-+Create aposts for a user - POST/user/{id}/posts
+-Create a posts for a user - GET/user/{id}/posts/{post_id}
