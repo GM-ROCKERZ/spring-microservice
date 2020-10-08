@@ -19,6 +19,10 @@ public class Post {
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JsonIgnore
 	private User user;
+	
+	public Post() {
+		
+	}
 
 	public Post(Integer id, String description, User user) {
 		super();
