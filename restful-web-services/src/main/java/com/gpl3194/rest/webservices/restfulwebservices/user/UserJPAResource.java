@@ -27,6 +27,7 @@ public class UserJPAResource {
 
 	@Autowired
 	private PostRepository postRepository;
+	
 	//GET /user
 	//reterive all users resource
 	@GetMapping("/jpa/users")
@@ -91,7 +92,7 @@ public class UserJPAResource {
 Optional<User> userOptional = userRepository.findById(id);
 		
 		if(!userOptional.isPresent()) {
-			throw new UserNotFoundException("id-" + id);
+			throw new UserNotFoundException("id " + id);
 		}
 		User user = userOptional.get();
 		post.setUser(user);
