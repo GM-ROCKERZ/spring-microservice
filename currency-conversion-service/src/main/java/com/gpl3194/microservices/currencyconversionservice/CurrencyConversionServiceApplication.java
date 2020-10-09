@@ -22,4 +22,6 @@ public class CurrencyConversionServiceApplication {
 		return Sampler.ALWAYS_SAMPLE;
 	}
 
+
+
 }
